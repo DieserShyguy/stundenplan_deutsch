@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stundenplan</title>
+        <meta charset="UTF-8">
+    </head>
+    <style>
+        a{
+            font-size: 80px;
+        }
+        table {
+            text-align: center;
+        }
+    </style>
+    <script>
+        class Builder {
+            constructor() {
+                this.lessons = [
+                    ["Montag","1","2","3","4","5","6","7"],
+                    ["Dienstag","1","2","3","4","5","6","7"],
+                    ["Mittwoch","1","2","3","4","5","6","7"],
+                    ["Donnerstag","1","2","3","4","5","6","7"],
+                    ["Freitag","1","2","3","4","5","6","7"],
+                ]
+            }
+            buildSelection() {
+                for (let i = 0; i < this.lessons.length; i++) {
+                    const option = document.createElement("option")
+                    option.setAttribute("value", i)
+                    option.innerHTML = this.lessons[i][0]
+                    option.setAttribute("value", i)
+                    document.getElementById("lesson").appendChild(option);
+                }
+            }
+            tablebuilder(){
+                var selection = document.getElementById("lesson").value
+                if(document.getElementById("tbody")){
+                    var element = document.getElementById("tbody");
+                    document.getElementById("tabelle").removeChild(element);
+                }
+                const tbody = document.createElement("tbody")
+                tbody.setAttribute("id", "tbody")
+                for (let i = 0; i < this.lessons[selection].length; i++) {
+                    const tr = document.createElement("tr")
+                    const td = document.createElement("td")
+                    const a = document.createElement("a")
+                    if(i == 0) {
+                        a.style.textDecoration = "underline"
+                        a.style.fontWeight = "bold"
+                    }
+                    a.innerHTML = this.lessons[selection][i]
+                    td.appendChild(a)
+                    tr.appendChild(td)
+                    tbody.appendChild(tr)
+                    document.getElementById("tabelle").appendChild(tbody)
+                }
+                
+            }
+        }
+    </script>
+    <body onload="build.buildSelection()">
+        <center>
+
+            <select name="lesson" id="lesson" onchange="build.tablebuilder()">
+                <option value="" selected hidden>Tag</option>
+            </select><br><br>
+            <table border="1" id="tabelle">
+            </table>
+        </center>
+        </body>
+    <script>
+        let build = new Builder;
+    </script>
+</html>
