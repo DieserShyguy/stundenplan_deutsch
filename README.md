@@ -2,7 +2,7 @@
 ## Information:
 This Repository is avalabil in english: [here](https://github.com/DieserShyguy/timetable_english)
 ## Beispiel:
-Hier finden sie ein Beispiel: [hier](https://diesershyguy.github.io/stundenplan_deutsch)
+Hier finden sie ein Beispiel: [hier](https://diesershyguy.github.io/stundenplan_deutsch/)
 ## Anleitung:
 ### Schritt 0: Herunterladen
 Sie können sich die Datei hier runter laden: [Downloads](https://github.com/diesershyguy/stundenplan_deutsch/releases)
