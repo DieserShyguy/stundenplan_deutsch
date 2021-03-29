@@ -1,11 +1,11 @@
 # Stundenplan
 ## Information:
-This Repository is avalabil in english: [here](https://github.com/DieserShyguy/timetable_english)
+This Repository is avalabil in english: [here](https://github.com/gelbershyguy/timetable_english)
 ## Beispiel:
-Hier finden sie ein Beispiel: [hier](https://diesershyguy.github.io/stundenplan_deutsch/)
+Hier finden sie ein Beispiel: [hier](https://gelbershyguy.github.io/stundenplan_deutsch/)
 ## Anleitung:
 ### Schritt 0: Herunterladen
-Sie können sich die Datei hier runter laden: [Downloads](https://github.com/diesershyguy/stundenplan_deutsch/releases)
+Sie können sich die Datei hier runter laden: [Downloads](https://github.com/gelbershyguy/stundenplan_deutsch/releases)
 ### Schritt 1 Datei bearbeiten:
 Öffnen ```index.html``` in einen Editor zum Beispiel den Windows Standard Editor oder Notepad++ oder sie öffnen sie in einer IDE zum Beispiel in Visual Studio Code.
 ### Schritt 2 Einrichtung:
